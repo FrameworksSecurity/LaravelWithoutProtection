@@ -30,7 +30,6 @@ class PostController extends Controller
 
     public function save(Request $request)
     {
-
         Post::validate($request);
         $title =  $request->title;
         $description =  $request->description;
